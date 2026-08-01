@@ -27,7 +27,7 @@ posts: list[dict] = [
 def home(request: Request):
     context = {
         "posts":posts,
-        "title":"My blog"
+        "title":"Home"
     }
 
     return templates.TemplateResponse(request, "home.html", context)
